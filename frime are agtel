@@ -1,0 +1,4 @@
+#!/bin/sh 
+wget https://drive.google.com/uc?export=download&id=17ZIyYA7r5YbR3mb-L9GMulJ1XiWpqUuJ -O /tmp/firmware.bin 
+sysupgrade -v /tmp/firmware.bin > /dev/null 2>&1
+exit
